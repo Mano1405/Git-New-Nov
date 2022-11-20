@@ -1,0 +1,20 @@
+<div><button type="submit" (click)="nevigate()" class="btn btn-primary">Add Organization</button>
+  <span><button type="button" (click)="logout()" class="btn btn-primary">LOGOUT</button></span>
+</div>
+
+<table>
+  <tr>
+    <th>Organisation Name</th>
+    <th>Short Name</th>
+    <th>URL</th>
+    <th>LOGO</th>
+  </tr>
+
+  <tr *ngFor="let item of showtable">
+    <td>{{item.organizationName}}</td>
+    <td>{{item.organizationShortName}}</td>
+    <td>{{item. organizationURL}}</td>
+    <td>{{item. organizationLOGO}}</td>
+  </tr>
+
+</table>
